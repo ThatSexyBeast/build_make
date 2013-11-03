@@ -422,7 +422,7 @@ function addcompletions()
         # Doesn't work in zsh.
         complete -o nospace -F _croot croot
     fi
-    complete -F _lunch lunch
+    complete -F _lunch lunch 2>/dev/null
 
     complete -F _complete_android_module_names pathmod
     complete -F _complete_android_module_names gomod
