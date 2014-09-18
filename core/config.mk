@@ -998,6 +998,9 @@ endif # PRODUCT_USE_DYNAMIC_PARTITIONS
 BOARD_PREBUILT_HIDDENAPI_DIR ?=
 .KATI_READONLY := BOARD_PREBUILT_HIDDENAPI_DIR
 
+# Rules for QCOM targets
+include vendor/extras/build/core/qcom_target.mk
+
 # ###############################################################
 # Set up final options.
 # ###############################################################
